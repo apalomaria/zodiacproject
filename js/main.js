@@ -94,7 +94,7 @@ for (var i=0; i < zodiacNames.length; i++) {
   document.getElementById("image").src="";
   };
 };
-
+//this section is for when user enters name in input field and then they can press the ENTER button on the keyboard. SUPER handy!
 var btn=document.getElementById("sign");
   btn.addEventListener('keypress', function enterKey(e){
     if(e.keyCode == 13){

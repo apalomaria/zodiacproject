@@ -1,7 +1,26 @@
 body {
   text-align: center;
+  /*background-image: url("galaxy.jpg");*/
 }
 
 input {
-  width: 25%; 
+  width: 25%;
+  height: 35px;
+  text-align: center;
+  font-size: 18px;
+}
+p{
+  font-size: 25px;
+}
+img {
+  padding: 1% 0 3%;
+}
+.btn {
+  margin-top: 1%;
+}
+.header {
+  font-family: 'Artifika', serif;
+}
+.top {
+  margin: 7% 0 3%;
 }

@@ -8,6 +8,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
     integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
 
 
     <meta charset="utf-8">
@@ -18,9 +19,11 @@
     <title>Zodiac Signs</title>
   </head>
   <body>
-    <h1> Horoscope Sign</h1>
-    <input id="sign" placeholder="Enter your horoscope sign here" type="text">
+    <div class="top">
+    <h1 class="header"> Horoscope Sign</h1>
+    <input id="sign" placeholder="Enter your horoscope sign here" type="text"> <br>
     <button type="button" onclick="getInfo()" class="btn btn-primary btn-lg">Click Here</button>
+  </div>
 
     <div id=display>
       <h1 id="name"></h1>
