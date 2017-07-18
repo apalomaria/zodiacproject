@@ -78,9 +78,17 @@ for (var i=0; i < zodiacNames.length; i++) {
     document.getElementById("name").textContent = sign.value;
     document.getElementById("image").src=zodiacNames[i].img;
     document.getElementById("dates").textContent= "Dates are: "+ zodiacNames[i].dates;
-  } else {
+  } else if {
     console.log("entered incorrect zodiac name");
     document.getElementById("name").textContent="Incorrect zodiac name. Please try again.";
+  } else {
+    console.log("correct zodiac name ran");
+    console.log("name typed in:" + sign.value);
+    console.log("image to display:" + zodiacNames[i].img);
+    console.log("dates are:" + zodiacNames[i].dates);
+    document.getElementById("name").textContent = sign.value;
+    document.getElementById("image").src=zodiacNames[i].img;
+    document.getElementById("dates").textContent= "Dates are: "+ zodiacNames[i].dates;
     };
   };
 };
