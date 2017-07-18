@@ -65,18 +65,22 @@ var zodiacNames = [
 //here is when  you enter text in the input field that it will be stored in console WITH the function of the button
 function getInfo() {
   var sign = document.getElementById("sign");
-  console.log(sign);
-  console.log("zodiac name entered:" + sign.value);
-};
-for (var i=0; i < zodiacNames.length; i++){
+  console.log("zodiac name entered:" + sign.value); // anything that was entered will display in console
+
+for (var i=0; i < zodiacNames.length; i++) {
   console.log(sign.value.toLowerCase());
   console.log("current sign in loop is "+ zodiacNames[i].zName);
     if (sign.value.toLowerCase() === zodiacNames[i].zName){
-  } console.log("correct zodiac name ran");
+    console.log("correct zodiac name ran");
     console.log("name typed in:" + sign.value);
     console.log("image to display:" + zodiacNames[i].img);
     console.log("dates are:" + zodiacNames[i].dates);
     document.getElementById("name").textContent = sign.value;
     document.getElementById("image").src=zodiacNames[i].img;
     document.getElementById("dates").textContent= "Dates are: "+ zodiacNames[i].dates;
+  } else {
+    console.log("entered incorrect zodiac name");
+    document.getElementById("name").textContent="Incorrect zodiac name. Please try again.";
+    };
+  };
 };
